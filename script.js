@@ -2,6 +2,9 @@ let elements = ['install', 'surge-one', 'cname', 'surge-two']
 let copied = false
 
 const copy = (element) => {
+  if (copied) {
+    return
+  }
   let box = document.getElementById(element)
   let boxHidden = box.querySelector('.copy')
   let boxImg = box.querySelector('img')
