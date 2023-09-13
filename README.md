@@ -25,7 +25,7 @@ Surge specializes in deploying and hosting these types of sites, and as a result
 
 Surge is very easy to install as well. We will perform a global install so that you will always have Surge available to deploy your projects.
 
-Run the following from *any working directory* in your terminal:
+Run the following command from *any working directory* in your terminal:
 
 ```sh
 npm install --global surge
@@ -35,7 +35,7 @@ Since it is global, this is an install you will only ever need to run ***once***
 
 ## Preparing Your Project
 
-First off, in order for Surge to work, you'll need to be in the same directory that your `index.html` resides. You may need to rearrange your files to achieve this. Be aware this may change any relative pathing in your project. Once that is complete, you are ready to run the surge command.
+First off, in order for Surge to work, you'll need to be in the same directory that your `index.html` resides. You may need to rearrange your files to achieve this. Be aware this may change any relative paths in your project. Once that is complete, you are ready to deploy.
 
 
 ## Deployment
@@ -64,7 +64,7 @@ We can set up a file in your project that will remember the particular domain yo
 
 First, we'll need to see that the URL you want to use is available. Open a browser window and navigate to any surge domain you'd like.
 
-The URL should look similar to this:
+The URL should follow this format:
 
 ```sh
 https://staticdeployment.surge.sh/
@@ -74,7 +74,7 @@ If it's available, the URL should show this in the browser:
 
 ![not-found](./images/not-found.png)
 
-This means that no one else has deployed a project to this URL and that you can use it.
+This means that no one else has deployed a project to this URL, and that it is available to be used. Remember this URL for the next step.
 
 ### Setting Up a CNAME File
 
@@ -86,11 +86,11 @@ In the root directory of your project, run this command:
 touch CNAME
 ```
 
-This will create the CNAME file. Go ahead and open it in VSCode. Paste your chosen domain into this file.
+This will create the CNAME file. Go ahead and open it in VSCode. Place your chosen domain into this file on the top line.
 
 Surge will automatically recognize that there is a CNAME file and go there to fetch your domain.
 
-Run the surge command once again to re-deploy.
+Run the **surge** command once again to re-deploy.
 
 ```sh
 surge

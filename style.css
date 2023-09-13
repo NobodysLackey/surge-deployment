@@ -11,6 +11,20 @@ body {
   align-items: center;
 }
 
+kbd {
+  background-color: #f7e3d6;
+  padding: 4px;
+  border: 1px solid #564740;
+  border-radius: 3px;
+  color: #564740;
+  font-weight: bold;
+}
+
+kbd:hover {
+  background-color: #564740;
+  color: #f7e3d6;
+}
+
 main {
   width: 95vw;
   margin: 2vh 2vw;
@@ -23,6 +37,14 @@ a {
 
 a:hover {
   color: #63c199;
+}
+
+h2 {
+  margin-top: 4vh;
+}
+
+hr {
+  border: 2px solid #564740;
 }
 
 .shell {
@@ -100,4 +122,5 @@ a:hover {
 
 .gif {
   width: 900px;
+  border: 2px solid #2e7254;
 }

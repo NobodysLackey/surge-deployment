@@ -20,6 +20,7 @@
           necessary steps from start to finish, and even cover how you can
           choose a custom domain as well.
         </p>
+        <hr />
       </center>
 
       <h2>Objectives</h2>
@@ -36,7 +37,8 @@
       <p>
         When we use the term "static", we are referring to the fact that the
         content of the website will not change unless the files are manually
-        updated. The site does *not* interact with a database or involve any
+        updated. The site does <em>not</em> interact with a database or involve
+        any
         <a href="https://en.wikipedia.org/wiki/Server-side"
           >server-side processing</a
         >. The site will simply display the same information to every user.
@@ -57,7 +59,8 @@
       </p>
 
       <p>
-        Run the following from <em>any working directory</em> in your terminal:
+        Run the following command from <em>any working directory</em> in your
+        terminal:
       </p>
 
       <div class="shell" id="install">
@@ -79,10 +82,9 @@
       <h2>Preparing Your Project</h2>
       <p>
         First off, in order for Surge to work, you'll need to be in the same
-        directory that your <code>index.html</code> resides. You may need to
-        rearrange your files to achieve this. Be aware this may change any
-        relative pathing in your project. Once that is complete, you are ready
-        to run the surge command.
+        directory that your <b>index.html</b> resides. You may need to rearrange
+        your files to achieve this. Be aware this may change any relative paths
+        in your project. Once that is complete, you are ready to deploy.
       </p>
 
       <h2>Deployment</h2>
@@ -106,8 +108,7 @@
       <p>
         Next, you'll be asked to confirm the project path. If you are in the
         root directory of your project, this should already be correct. Just
-        press
-        <kbd>enter</kbd> to continue.
+        press <kbd>enter</kbd> to continue.
       </p>
 
       <p>
@@ -123,7 +124,7 @@
       />
 
       <p>
-        Once the deployment completes, you can navigate to the domain assigned
+        Once the deployment completes, you can navigate to the assigned domain
         to see your project online!
       </p>
 
@@ -139,7 +140,7 @@
         a browser window and navigate to any surge domain you'd like.
       </p>
 
-      <p>The URL should look similar to this:</p>
+      <p>The URL should follow this format:</p>
 
       <div class="browser">
         <code> https://staticdeployment.surge.sh/ </code>
@@ -151,7 +152,7 @@
 
       <p>
         This means that no one else has deployed a project to this URL, and that
-        it is available to be used.
+        it is available to be used. Remember this URL for the next step.
       </p>
 
       <h3>Setting Up a CNAME File</h3>
@@ -173,8 +174,8 @@
       </div>
 
       <p>
-        This will create the CNAME file. Go ahead and open it in VSCode. Paste
-        your chosen domain into this file.
+        This will create the CNAME file. Go ahead and open it in VSCode. Place
+        your chosen domain into this file on the top line.
       </p>
 
       <p>
@@ -182,7 +183,9 @@
         there to fetch your domain.
       </p>
 
-      <p>Run the surge command once again to re-deploy.</p>
+      <p>
+        Save the file and run the <b>surge</b> command once again to re-deploy.
+      </p>
 
       <div class="shell" id="surge-two">
         <div class="code">
@@ -197,7 +200,7 @@
       <p>Now, navigate to your chosen domain to see your project there!</p>
       <h2>Recap</h2>
       <p>
-        In this website, we learned how to use the simplest deployment tool
+        In this walkthrough, we learned how to use the simplest deployment tool
         available - Surge. We also learned how to set up a custom domain with
         Surge by utilizing a CNAME file.
       </p>
