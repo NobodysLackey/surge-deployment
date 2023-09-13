@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Surge Deployment</title>
+  </head>
+  <body>
+    <main>
+      <center>
+        <a href="https://surge.sh/"
+          ><img src="./images/banner.png" alt="banner"
+        /></a>
+
+        <p>
+          This website is a walkthrough for how to deploy a static site using
+          <a href="https://surge.sh/">Surge</a>. We will walk through all of the
+          necessary steps from start to finish, and even cover how you can
+          choose a custom domain as well.
+        </p>
+      </center>
+
+      <h2>Objectives</h2>
+      <ul>
+        <li>
+          Learn how to do a one-time install of Surge globally on your machine
+        </li>
+        <li>Set up your static project for deployment</li>
+        <li>Deploy your site with Surge</li>
+        <li>Learn how to set up a custom domain</li>
+      </ul>
+
+      <h2>What is a Static Site?</h2>
+      <p>
+        When we use the term "static", we are referring to the fact that the
+        content of the website will not change unless the files are manually
+        updated. The site does *not* interact with a database or involve any
+        <a href="https://en.wikipedia.org/wiki/Server-side"
+          >server-side processing</a
+        >. The site will simply display the same information to every user.
+        Typically, static sites are faster and more secure than dynamic sites,
+        but offer less functionality for practical use.
+      </p>
+
+      <p>
+        Surge specializes in deploying and hosting these types of sites, and as
+        a result, is extremely light-weight and fast. The feature we love the
+        most is that Surge is extremely <em>easy to use</em>.
+      </p>
+
+      <h2>Installing Surge</h2>
+      <p>
+        Surge is very easy to install as well. We will perform a global install
+        so that you will always have Surge available to deploy your projects.
+      </p>
+
+      <p>
+        Run the following from <em>any working directory</em> in your terminal:
+      </p>
+
+      <div class="shell">
+        <code>npm install --global surge</code>
+      </div>
+
+      <p>
+        Since it is global, this is an install you will only ever need to run
+        <em><b>once</b></em
+        >, not on a project-by-project basis.
+      </p>
+
+      <h2>Preparing Your Project</h2>
+      <p>
+        First off, in order for Surge to work, you'll need to be in the same
+        directory that your <code>index.html</code> resides. You may need to
+        rearrange your files to achieve this. Be aware this may change any
+        relative pathing in your project. Once that is complete, you are ready
+        to run the surge command.
+      </p>
+
+      <h2>Deployment</h2>
+      <p>In the root directory of your project, run the following command:</p>
+
+      <div class="shell">
+        <code>surge</code>
+      </div>
+
+      <p>
+        You will be prompted to set up an account with Surge in your command
+        line. Go ahead and do so.
+      </p>
+
+      <p>
+        Next, you'll be asked to confirm the project path. If you are in the
+        root directory of your project, this should already be correct. Just
+        press
+        <kbd>enter</kbd> to continue.
+      </p>
+
+      <p>
+        You will be automatically assigned a silly (usually) domain for your
+        site. This is ok and we can change it later. Press <kbd>enter</kbd> to
+        continue.
+      </p>
+
+      <img
+        src="https://surge.sh/images/help/getting-started-with-surge.gif"
+        alt="deploy"
+        class="image gif"
+      />
+
+      <p>
+        Once the deployment completes, you can navigate to the domain assigned
+        to see your project online!
+      </p>
+
+      <h2>Setting Up a Custom Domain (optional)</h2>
+      <p>
+        We can set up a file in your project that will remember the particular
+        domain you want to use. This step is entirely optional.
+      </p>
+
+      <h3>Choose a Domain</h3>
+      <p>
+        First, we'll need to see that the URL you want to use is available. Open
+        a browser window and navigate to any surge domain you'd like.
+      </p>
+
+      <p>The URL should look similar to this:</p>
+
+      <div class="browser">
+        <code> https://u1deployment.surge.sh/ </code>
+      </div>
+
+      <p>If it's available, the URL should show this in the browser:</p>
+
+      <img src="./images/not-found.png" alt="not-found" class="image" />
+
+      <p>
+        This means that no one else has deployed a project to this URL and that
+        you can use it.
+      </p>
+
+      <h3>Setting Up a CNAME File</h3>
+      <p>
+        Next, we will create a special file that we can store our chosen domain
+        in.
+      </p>
+
+      <p>In the root directory of your project, run this command:</p>
+
+      <div class="shell">
+        <code>touch CNAME</code>
+      </div>
+
+      <p>
+        This will create the CNAME file. Go ahead and open it in VSCode. Paste
+        your chosen domain into this file.
+      </p>
+
+      <p>
+        Surge will automatically recognize that there is a CNAME file and go
+        there to fetch your domain.
+      </p>
+
+      <p>Run the surge command once again to re-deploy.</p>
+
+      <div class="shell">
+        <code> surge </code>
+      </div>
+
+      <p>Now, navigate to your domain to see your project there!</p>
+      <h2>Recap</h2>
+      <p>
+        In this website, we learned how to use the simplest deployment tool
+        available - Surge. We also learned how to set up a custom domain with
+        Surge by utilizing a CNAME file.
+      </p>
+
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://surge.sh/">Surge</a></li>
+      </ul>
+      <center>
+        <a href="https://surge.sh">
+          <img src="./images/logo.png" alt="surge" />
+        </a>
+      </center>
+    </main>
+  </body>
+</html>
