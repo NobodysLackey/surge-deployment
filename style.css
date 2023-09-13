@@ -14,7 +14,7 @@ body {
 
 main {
   width: 95vw;
-  margin: 2vh 2vw; 
+  margin: 2vh 2vw;
 }
 
 a {
@@ -31,16 +31,17 @@ a:hover {
   height: 50px;
   background-color: #564740;
   color: #f7e3d6;
-  border: 2px solid #f7e3d6;;
+  border: 2px solid #f7e3d6;
   border-radius: 5px;
   padding: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-weight: bold;
 }
 
 .browser {
-  width: 200px;
+  width: 250px;
   height: 30px;
   background-color: #e6e6e6;
   color: #564740;
