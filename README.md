@@ -67,7 +67,7 @@ First, we'll need to see that the URL you want to use is available. Open a brows
 The URL should look similar to this:
 
 ```sh
-https://u1deployment.surge.sh/
+https://staticdeployment.surge.sh/
 ```
 
 If it's available, the URL should show this in the browser:
@@ -96,7 +96,7 @@ Run the surge command once again to re-deploy.
 surge
 ```
 
-Now, navigate to your domain to see your project there!
+Now, navigate to your chosen domain to see your project there!
 
 ## Recap
 

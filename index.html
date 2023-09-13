@@ -11,7 +11,7 @@
     <main>
       <center>
         <a href="https://surge.sh/"
-          ><img src="./images/banner.png" alt="banner"
+          ><img src="./images/banner.png" alt="banner" class="banner"
         /></a>
 
         <p>
@@ -60,10 +60,13 @@
         Run the following from <em>any working directory</em> in your terminal:
       </p>
 
-      <div class="shell">
+      <div class="shell" id="install">
         <code>npm install --global surge</code>
+        <div class="copy" >
+          <img src="./images/copy.png" alt="copy" />
+        </div>
       </div>
-
+ 
       <p>
         Since it is global, this is an install you will only ever need to run
         <em><b>once</b></em
@@ -82,8 +85,11 @@
       <h2>Deployment</h2>
       <p>In the root directory of your project, run the following command:</p>
 
-      <div class="shell">
+      <div class="shell" id="surge-one">
         <code>surge</code>
+        <div class="copy" >
+          <img src="./images/copy.png" alt="copy" />
+        </div>
       </div>
 
       <p>
@@ -130,7 +136,7 @@
       <p>The URL should look similar to this:</p>
 
       <div class="browser">
-        <code> https://u1deployment.surge.sh/ </code>
+        <code> https://staticdeployment.surge.sh/ </code>
       </div>
 
       <p>If it's available, the URL should show this in the browser:</p>
@@ -150,8 +156,11 @@
 
       <p>In the root directory of your project, run this command:</p>
 
-      <div class="shell">
+      <div class="shell" id="cname">
         <code>touch CNAME</code>
+        <div class="copy" >
+          <img src="./images/copy.png" alt="copy" />
+        </div>
       </div>
 
       <p>
@@ -166,11 +175,14 @@
 
       <p>Run the surge command once again to re-deploy.</p>
 
-      <div class="shell">
-        <code> surge </code>
+      <div class="shell" id="surge-two">
+        <code>surge</code>
+        <div class="copy" >
+          <img src="./images/copy.png" alt="copy" />
+        </div>
       </div>
 
-      <p>Now, navigate to your domain to see your project there!</p>
+      <p>Now, navigate to your chosen domain to see your project there!</p>
       <h2>Recap</h2>
       <p>
         In this website, we learned how to use the simplest deployment tool
@@ -182,6 +194,7 @@
       <ul>
         <li><a href="https://surge.sh/">Surge</a></li>
       </ul>
+      <br>
       <center>
         <a href="https://surge.sh">
           <img src="./images/logo.png" alt="surge" />
