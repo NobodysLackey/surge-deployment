@@ -50,7 +50,7 @@ You will be prompted to set up an account with Surge in your command line. Go ah
 
 Next, you'll be asked to confirm the project path. If you are in the root directory of your project, this should already be correct. Just press <kbd>enter</kbd> to continue.
 
-You will be automatically assigned a silly (usually) domain for your site. This is ok and we can change it later. Press <kbd>enter</kbd> to continue.
+You will be automatically assigned a silly (usually) randomly generated domain name for your site. This is ok and we can change it later. Press <kbd>enter</kbd> to continue.
 
 ![deploy](https://surge.sh/images/help/getting-started-with-surge.gif)
 
