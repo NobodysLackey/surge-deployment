@@ -1,37 +1,46 @@
 let elements = ['install', 'surge-one', 'cname', 'surge-two']
 let copied = false
+let out = true
 
 const copy = (element) => {
   if (copied) {
     return
   }
-  let box = document.getElementById(element)
-  let boxHidden = box.querySelector('.copy')
-  let boxImg = box.querySelector('img')
-  navigator.clipboard.writeText(box.querySelector('code').innerText)
-  boxImg.setAttribute('src', './images/check.png')
+  let shell = document.getElementById(element)
+  let boxHidden = shell.querySelector('.copy')
+  let boxImg = shell.querySelector('img')
+
+  navigator.clipboard.writeText(shell.querySelector('code').innerText)
   copied = true
+
+  boxImg.setAttribute('src', './images/check.png')
+
   setTimeout(() => {
     copied = false
-    boxHidden.style.opacity = 0
+    if (out) {
+      boxHidden.style.opacity = 0
+    }
     boxImg.setAttribute('src', './images/copy.png')
   }, 2000)
 }
 
 const hover = (element, action) => {
-  let box = document.getElementById(element)
-  let boxHidden = box.querySelector('.copy')
+  let boxHidden = document.getElementById(element).querySelector('.copy')
   if (action === 'over') {
+    out = false
     boxHidden.style.opacity = 1
   } else if (action === 'out' && !copied) {
+    out = true
     boxHidden.style.opacity = 0
+  } else if (action === 'out' && copied) {
+    out = true
   }
 }
 
 elements.forEach((element) => {
   let el = document.querySelector(`#${element}`)
-  el.addEventListener('mouseover', () => hover(element, 'over'))
-  el.addEventListener('mouseout', () => hover(element, 'out'))
+  el.addEventListener('mouseenter', () => hover(element, 'over'))
+  el.addEventListener('mouseleave', () => hover(element, 'out'))
   let box = el.querySelector('.copy')
   box.addEventListener('click', () => copy(element))
 })
