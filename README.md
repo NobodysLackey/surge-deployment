@@ -104,4 +104,4 @@ In this lesson, we learned how to use the simplest deployment tool available - S
 
 ## Resources
 
-- [Surge](https://surge.sh/)
+- [Surge Docs](https://surge.sh/help/getting-started-with-surge)
