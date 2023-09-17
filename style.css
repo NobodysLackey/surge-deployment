@@ -3,7 +3,7 @@ body {
   background-color: #e6e6e6;
   color: #564740;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  width: 100vw;
+  width: 98vw;
 
   display: flex;
   flex-direction: column;
@@ -23,6 +23,7 @@ kbd {
 kbd:hover {
   background-color: #564740;
   color: #f7e3d6;
+  cursor: default;
 }
 
 main {
@@ -49,6 +50,7 @@ hr {
 
 .shell {
   width: 250px;
+  max-width: 90vw;
   height: 50px;
   background-color: #564740;
   color: #f7e3d6;
@@ -61,8 +63,8 @@ hr {
 }
 
 .copy {
-  height: 25px;
-  width: 25px;
+  min-height: 25px;
+  min-width: 25px;
   border: 1px solid #80736b;
   border-radius: 5px;
   display: flex;
@@ -81,6 +83,7 @@ hr {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .code > p {
@@ -88,6 +91,7 @@ hr {
   font-family: monospace;
   margin-right: 4px;
   color: #63c199;
+  cursor: default;
 }
 
 .browser {
@@ -110,14 +114,7 @@ hr {
 }
 
 .banner {
-  border: 2px solid #e6e6e6;
-  border-radius: 5px;
   max-width: 90vw;
-}
-
-.banner:hover {
-  border: 2px solid #2e7254;
-  border-radius: 5px;
 }
 
 .gif {
