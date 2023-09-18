@@ -48,6 +48,12 @@ hr {
   border: 2px solid #564740;
 }
 
+.shadow {
+  -webkit-box-shadow: 0px 5px 8px -4px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 0px 5px 8px -4px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 5px 8px -4px rgba(0, 0, 0, 0.68);
+}
+
 .shell {
   width: 250px;
   max-width: 90vw;
