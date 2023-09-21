@@ -4,7 +4,7 @@
 
 ## Lesson Overview
 
-This lesson is a walkthrough for how to deploy a static site using [Surge](https://surge.sh/). We will walk through all of the necessary steps from start to finish, and even cover how you can choose a custom domain as well.
+[This lesson](https://staticdeployment.surge.sh/) is a walkthrough for how to deploy a static site using [Surge](https://surge.sh/). We will walk through all of the necessary steps from start to finish, and even cover how you can choose a custom domain as well.
 
 ## Objectives
   - Learn how to do a one-time install of Surge globally on your machine
