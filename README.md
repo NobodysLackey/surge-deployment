@@ -9,8 +9,8 @@
 ## Objectives
   - Learn how to do a one-time [install](#installing-surge) of Surge globally on your machine
   - Set up your [static project](#preparing-your-project) for deployment
-  - [Deploy](#deploy) your site with Surge
-  - Learn how to set up a [custom domain](#setting-up-a-custom-domain-(optional))
+  - [Deploy](#deployment) your site with Surge
+  - Learn how to set up a [custom domain](#setting-up-a-custom-domain-optional)
 
 ## Getting Started
   - open up your project in VSCode with `code .`
