@@ -7,10 +7,10 @@
 [This lesson](https://staticdeployment.surge.sh/) is a walkthrough for how to deploy a static site using [Surge](https://surge.sh/). We will walk through all of the necessary steps from start to finish, and even cover how you can choose a custom domain as well.
 
 ## Objectives
-  - Learn how to do a one-time install of Surge globally on your machine
-  - Set up your static project for deployment
-  - Deploy your site with Surge
-  - Learn how to set up a custom domain
+  - Learn how to do a one-time [install](#installing-surge) of Surge globally on your machine
+  - Set up your [static project](#preparing-your-project) for deployment
+  - [Deploy](#deploy) your site with Surge
+  - Learn how to set up a [custom domain](#setting-up-a-custom-domain-(optional))
 
 ## Getting Started
   - open up your project in VSCode with `code .`
